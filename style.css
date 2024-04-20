@@ -6,7 +6,7 @@
   overflow: none;
 }
 body {
-  background-color: rgb(255, 227, 227);
+  background-color: #f0ebff;
 }
 
 .main {
@@ -15,16 +15,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("https://bdtickets.com/images/banner/banner-web.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .choose-routes {
   width: 80%;
   background-color: #ffffff;
   box-shadow: 0 0 10px black;
-  padding: 40px 10px;
+  padding: 40px 10px 20px 10px;
   border-radius: 10px;
   position: relative;
-  margin-top: 50px;
+  margin: 50px 10px;
 }
 
 .transports {
