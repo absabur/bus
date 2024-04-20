@@ -134,6 +134,15 @@ trendingPlace.forEach((place) => {
 
 const searchBtn = document.querySelector(".search-btn");
 const date = document.querySelector(".date");
+const dateReturn = document.querySelector(".date-return");
+
+const today = new Date();
+const year = today.getFullYear();
+const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are 0-based, so we add 1 and pad with leading zeros if necessary
+const day = String(today.getDate()).padStart(2, "0"); // Pad with leading zeros if necessary
+const formattedDate = `${year}-${month}-${day}`;
+date.value = formattedDate;
+dateReturn.value = formattedDate;
 
 searchBtn?.addEventListener("click", (event) => {
   if (selectGoingFrom?.textContent === "Select Place") {

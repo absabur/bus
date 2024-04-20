@@ -83,7 +83,7 @@ if (from && to && selectedDate && selectedDate) {
   if (availableBus.length === 0) {
     showBuses.innerHTML = `<div class="no-bus">
     <img src="https://bdtickets.com/images/404.svg" width="300px" />
-    <h1>Sorry, we didn't find any routes for your search.</h1>
+    <h1 style="text-align: center;">Sorry, we didn't find any routes for your search.</h1>
     </div>`;
   } else {
     let displayBus = availableBus.map((bus) => {
