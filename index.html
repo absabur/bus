@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bus</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="choose-routes">
+        <div class="transports">
+          <div class="transport active">
+            <i class="fas fa-bus"></i>
+            <p>Bus</p>
+          </div>
+          <div class="transport">
+            <i class="fas fa-plane"></i>
+            <p>Air Plane</p>
+          </div>
+          <div class="transport">
+            <i class="fas fa-train"></i>
+            <p>Train</p>
+          </div>
+        </div>
+        <div class="from-to">
+          <div class="from">
+            <label for="from">Going From</label>
+            <p class="select-going-from">Select Place</p>
+            <div class="options optionsf">
+              <input
+                type="text"
+                class="search searchf"
+                placeholder="Search By City"
+              />
+              <div class="filter-option"></div>
+            </div>
+          </div>
+          <div class="switch-arrow">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          </div>
+          <div class="to">
+            <label for="to">Going To</label>
+            <p class="select-going-to">Select Place</p>
+            <div class="options optionst">
+              <input
+                type="text"
+                class="search searcht"
+                placeholder="Search By City"
+              />
+              <div class="filter-option"></div>
+            </div>
+          </div>
+        </div>
+        <div class="dates">
+          <div class="from">
+            <label for="from">Journey Date</label>
+            <input class="date-input date" type="date" id="from" />
+          </div>
+          <div class="to">
+            <label for="to">Return Date</label>
+            <input class="date-input" type="date" id="to" />
+          </div>
+        </div>
+        <div class="tranding-place-section">
+          <p>Trending Search:</p>
+          <div class="tranding-places"></div>
+        </div>
+        <button type="submit" class="search-btn">Search Bus</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

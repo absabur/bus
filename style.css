@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: none;
+}
+body {
+  background-color: rgb(255, 227, 227);
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choose-routes {
+  width: 80%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px black;
+  padding: 40px 10px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.transports {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  border: red solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.search-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.search-btn:hover {
+  box-shadow: 0 0 10px black;
+}
+
+.transport {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: red solid 1px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.transport:hover {
+  background-color: rgb(255, 115, 115);
+  border: red solid 1px;
+}
+
+.active {
+  background-color: red;
+  color: white;
+}
+
+.from-to,
+.dates {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  margin: 10px 0;
+  position: relative;
+}
+
+.from,
+.to {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 30px;
+}
+
+.from label,
+.to label {
+  opacity: 0.5;
+}
+
+.select-going-from,
+.select-going-to {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.switch-arrow {
+  border-radius: 10px;
+  border: 1px solid red;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.to {
+  border-left: 1px solid red;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.date-input {
+  padding: 5px;
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+  /* display: none; */
+}
+
+.tranding-places {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.tranding-place {
+  padding: 10px;
+  background-color: #f0ebff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  display: none;
+  box-shadow: 0 0 5px black;
+}
+
+.options-from {
+  display: block;
+}
+
+.filter-option {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.options input {
+  width: 100%;
+  border: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+}
+
+.option {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s;
+  background-color: rgb(235, 235, 235);
+}
+
+.option:hover {
+  background-color: rgb(255, 115, 115);
+}
+
+.tranding-place {
+  margin: 10px;
+}
+.show-buses {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.bus {
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bus div {
+  margin: 10px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.no-bus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  border-radius: 100%;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+.home:hover {
+  box-shadow: 0 0 5px black;
+}
