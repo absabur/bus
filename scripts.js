@@ -32,7 +32,15 @@ searchf?.addEventListener("input", (e) => {
     return searchRegExp.test(techName);
   });
   setOptions(newCities, 0);
+  const option = document.querySelectorAll(".option");
+  console.log(option);
+  option.forEach((opt) => {
+    opt.addEventListener("click", () => {
+      selectGoingFrom.textContent = opt.textContent;
+    });
+  });
 });
+
 searcht?.addEventListener("input", (e) => {
   let value = e.target.value;
   value = value.toLowerCase();
@@ -42,6 +50,12 @@ searcht?.addEventListener("input", (e) => {
     return searchRegExp.test(techName);
   });
   setOptions(newCities, 1);
+  const option = document.querySelectorAll(".option");
+  option.forEach((opt) => {
+    opt.addEventListener("click", () => {
+      selectGoingTo.textContent = opt.textContent;
+    });
+  });
 });
 
 switchPlace.addEventListener("click", () => {

@@ -285,6 +285,7 @@ label {
   border: none;
   border: none;
   outline: none;
+  padding-bottom: 5px;
   border-bottom: 1px solid black;
   font-size: 15px;
 }
