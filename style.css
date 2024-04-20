@@ -9,7 +9,81 @@ body {
   background-color: #f0ebff;
 }
 
+.navbar {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: red;
+}
+
+.call {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.my-bookings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  border: 2px solid red;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 25px;
+  height: 25px;
+}
+
 .main {
+  padding-top: 80px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -19,30 +93,31 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
 }
 
 .choose-routes {
   width: 80%;
   background-color: #ffffff;
   box-shadow: 0 0 10px black;
-  padding: 40px 10px 20px 10px;
+  padding: 40px 40px 20px 40px;
   border-radius: 10px;
   position: relative;
-  margin: 50px 10px;
+  margin: 80px 10px;
+  margin-top: 120px;
 }
 
 .transports {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
   width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: rgb(255, 255, 255);
-  border: red solid 1px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   padding: 10px;
 }
 
@@ -70,20 +145,31 @@ body {
 .transport {
   background-color: #ffffff;
   padding: 10px;
-  border-radius: 10px;
   border: red solid 1px;
   display: flex;
-  gap: 10px;
   align-items: center;
   cursor: pointer;
   transition: all 0.2s;
   font-size: 15px;
   font-weight: 600;
+  width: 25%;
+}
+
+.first {
+  border-radius: 10px 0 0 10px;
+}
+
+.last {
+  border-radius: 0 10px 10px 0;
+}
+
+.middle,
+.last {
+  border-left: 0px;
 }
 
 .transport:hover {
   background-color: rgb(255, 115, 115);
-  border: red solid 1px;
 }
 
 .active {
@@ -167,13 +253,6 @@ label {
   padding: 10px;
 }
 
-.tranding-place {
-  padding: 10px;
-  background-color: #f0ebff;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
 .options {
   position: absolute;
   z-index: 2;
@@ -219,7 +298,16 @@ label {
 }
 
 .tranding-place {
-  margin: 10px;
+  margin: 5px;
+  opacity: 0.5;
+  padding: 10px;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.tranding-place i {
+  margin: 0 5px;
 }
 .show-buses {
   padding: 10px;
@@ -263,7 +351,7 @@ label {
   justify-content: center;
   background-color: red;
   position: absolute;
-  top: 10px;
+  top: 90px;
   left: 10px;
   color: white;
   border-radius: 100%;

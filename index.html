@@ -14,20 +14,61 @@
     <title>Bus</title>
   </head>
   <body>
+    <div class="navbar">
+      <img
+        src="https://bdtickets.com/images/logo-new-2.png"
+        alt="Logo"
+        width="150px"
+      />
+      <div class="links">
+        <div class="link">
+          <i class="fas fa-bus"></i>
+          <p>Bus</p>
+        </div>
+        <div class="link">
+          <i class="fas fa-plane"></i>
+          <p>Air</p>
+        </div>
+        <div class="link">
+          <i class="fas fa-ship"></i>
+          <p>Ship</p>
+        </div>
+        <div class="link">
+          <i class="fas fa-bed"></i>
+          <p>Hotel</p>
+        </div>
+      </div>
+      <div class="call">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <p>Call To Book</p>
+          <p>16460</p>
+        </div>
+      </div>
+      <div class="my-bookings">
+        <i class="fa-solid fa-gear"></i>
+        <p>My Bookings</p>
+      </div>
+      <div class="profile"><i class="fa-solid fa-user"></i></div>
+    </div>
     <div class="main">
       <div class="choose-routes">
         <div class="transports">
-          <div class="transport active">
+          <div class="transport active first">
             <i class="fas fa-bus"></i>
             <p>Bus</p>
           </div>
-          <div class="transport">
+          <div class="transport middle">
             <i class="fas fa-plane"></i>
-            <p>Air Plane</p>
+            <p>Air</p>
           </div>
-          <div class="transport">
-            <i class="fas fa-train"></i>
-            <p>Train</p>
+          <div class="transport middle">
+            <i class="fas fa-ship"></i>
+            <p>Ship</p>
+          </div>
+          <div class="transport last">
+            <i class="fas fa-bed"></i>
+            <p>Hotel</p>
           </div>
         </div>
         <div class="from-to">
@@ -70,7 +111,7 @@
           </div>
         </div>
         <div class="tranding-place-section">
-          <p>Trending Search:</p>
+          <p style="opacity: 0.5">Trending Search:</p>
           <div class="tranding-places"></div>
         </div>
         <button type="submit" class="search-btn">Search Bus</button>
