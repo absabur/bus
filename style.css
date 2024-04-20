@@ -385,6 +385,9 @@ label {
   .my-bookings {
     display: none;
   }
+  .optionst {
+    right: 0;
+  }
 }
 @media screen and (max-width: 650px) {
   .choose-routes {
