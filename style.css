@@ -20,7 +20,8 @@ body {
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
 }
 
 .links {
@@ -80,6 +81,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.4);
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 .main {
@@ -148,9 +150,10 @@ body {
   border: red solid 1px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 5px;
   cursor: pointer;
   transition: all 0.2s;
-  font-size: 15px;
   font-weight: 600;
   width: 25%;
 }
@@ -187,26 +190,29 @@ body {
   background-color: white;
   margin: 10px 0;
   position: relative;
+  width: 100%;
 }
 
 .from,
 .to {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  width: 50%;
   padding: 5px 30px;
+  overflow: hidden;
 }
 
 .from label,
 .to label {
   opacity: 0.5;
+  font-size: 12px;
 }
 
 .select-going-from,
 .select-going-to {
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -233,15 +239,15 @@ body {
 }
 
 label {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .date-input {
-  padding: 5px;
+  padding: 2px;
   width: fit-content;
   border: none;
   background-color: transparent;
-  /* display: none; */
+  text-align: left;
 }
 
 .tranding-places {
@@ -361,4 +367,46 @@ label {
 
 .home:hover {
   box-shadow: 0 0 5px black;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .links,
+  .profile,
+  .my-bookings {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .choose-routes {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+  .transports {
+    width: 100%;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+  }
+  .transport {
+    border: none;
+    flex-direction: column;
+    box-shadow: 0 0 5px black;
+    width: 60px;
+    height: 60px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  .from {
+    padding: 5px;
+  }
 }
