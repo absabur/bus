@@ -71,50 +71,53 @@
             <p>Hotel</p>
           </div>
         </div>
-        <div class="from-to">
-          <div class="from">
-            <label for="from">Going From</label>
-            <p class="select-going-from">Select Place</p>
-            <div class="options optionsf">
-              <input
-                type="text"
-                class="search searchf"
-                placeholder="Search By City"
-              />
-              <div class="filter-option"></div>
+        <div class="select-section">
+          <div class="from-to">
+            <div class="from">
+              <label for="from">Going From</label>
+              <p class="select-going-from">Select Place</p>
+              <div class="options optionsf">
+                <input
+                  type="text"
+                  class="search searchf"
+                  placeholder="Search By City"
+                />
+                <div class="filter-option"></div>
+              </div>
+            </div>
+            <div class="switch-arrow">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div class="to">
+              <label for="to">Going To</label>
+              <p class="select-going-to">Select Place</p>
+              <div class="options optionst">
+                <input
+                  type="text"
+                  class="search searcht"
+                  placeholder="Search By City"
+                />
+                <div class="filter-option"></div>
+              </div>
             </div>
           </div>
-          <div class="switch-arrow">
-            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-          </div>
-          <div class="to">
-            <label for="to">Going To</label>
-            <p class="select-going-to">Select Place</p>
-            <div class="options optionst">
+          <div class="dates">
+            <div class="from">
+              <label for="from">Journey Date</label>
+              <input class="date-input date" type="date" id="from" />
+            </div>
+            <div class="to" style="opacity: 0.4; cursor: not-allowed">
+              <label for="to" style="cursor: not-allowed">Return Date</label>
               <input
-                type="text"
-                class="search searcht"
-                placeholder="Search By City"
+                style="cursor: not-allowed"
+                class="date-input date-return"
+                type="date"
+                id="to"
               />
-              <div class="filter-option"></div>
             </div>
           </div>
         </div>
-        <div class="dates">
-          <div class="from">
-            <label for="from">Journey Date</label>
-            <input class="date-input date" type="date" id="from" />
-          </div>
-          <div class="to" style="opacity: 0.4; cursor: not-allowed">
-            <label for="to" style="cursor: not-allowed">Return Date</label>
-            <input
-              style="cursor: not-allowed"
-              class="date-input date-return"
-              type="date"
-              id="to"
-            />
-          </div>
-        </div>
+
         <div class="tranding-place-section">
           <p style="opacity: 0.5">Trending Search:</p>
           <div class="tranding-places"></div>

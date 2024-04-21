@@ -12,6 +12,10 @@ let trendingPlace = [
     from: "Chittagong",
     to: "Rajshahi",
   },
+  {
+    from: "Dhaka",
+    to: "Rajshahi",
+  },
 ];
 
 // selecting elements
