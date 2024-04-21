@@ -52,20 +52,15 @@ const busdata = [
 let showBuses = document.querySelector(".show-buses");
 
 function convertDateFormat(dateString) {
-  // Split the date string into year, month, and day components
   const components = dateString.split("-");
-  const year = components[0].substring(2); // Extract the last two digits of the year
+  const year = components[0].substring(2);
   const month = components[1];
   const day = components[2];
-
-  // Assemble the date string in the format "dd-mm-yy"
   const convertedDateString = `${day}-${month}-${year}`;
-
   return convertedDateString;
 }
 
 const queryString = window.location.search;
-
 const urlParams = new URLSearchParams(queryString);
 
 const from = urlParams.get("from")?.toLocaleLowerCase();
