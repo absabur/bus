@@ -405,7 +405,7 @@ label {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 8;
+  z-index: 12;
   background-color: rgba(255, 208, 208, 0.5);
   backdrop-filter: blur(10px);
   display: flex;
