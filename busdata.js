@@ -9,6 +9,12 @@ const busdata = [
     from: "Dhaka",
     to: "Chittagong",
     fare: 1100,
+    date: "11-06-24",
+  },
+  {
+    from: "Dhaka",
+    to: "Chittagong",
+    fare: 1100,
     date: "30-04-24",
   },
   {
@@ -81,9 +87,10 @@ if (from && to && selectedDate && selectedDate) {
     <h1 style="text-align: center;">Sorry, we didn't find any routes for your search.</h1>
     </div>`;
   } else {
-    let displayBus = availableBus.map((bus) => {
+    let displayBus = availableBus.map((bus, index) => {
       return `
         <div class="bus">
+          <h2 style="width: 100%">Bus: ${index + 1}</h2>
             <div class="bus-from">Starting Point: ${bus.from}</div>
             <div class="bus-to">End Point: ${bus.to}</div>
             <div class="bus-fare">Bus Fare: ${bus.fare}</div>
@@ -91,8 +98,41 @@ if (from && to && selectedDate && selectedDate) {
         </div>
         `;
     });
-    showBuses.innerHTML = displayBus;
+    for (let item of displayBus) {
+      showBuses.innerHTML += item;
+    }
   }
 } else {
   window.location.href = `index.html`;
 }
+
+let h3 = document.querySelector(".h3");
+
+h3.innerHTML = "Searching.";
+setTimeout(() => {
+  h3.innerHTML = "Searching..";
+}, 100);
+setTimeout(() => {
+  h3.innerHTML = "Searching...";
+}, 200);
+setTimeout(() => {
+  h3.innerHTML = "Searching....";
+}, 300);
+setTimeout(() => {
+  h3.innerHTML = "Searching.....";
+}, 400);
+setTimeout(() => {
+  h3.innerHTML = "Searching.....";
+}, 500);
+setTimeout(() => {
+  h3.innerHTML = "Searching....";
+}, 600);
+setTimeout(() => {
+  h3.innerHTML = "Searching...";
+}, 700);
+setTimeout(() => {
+  h3.innerHTML = "Searching..";
+}, 800);
+setTimeout(() => {
+  h3.innerHTML = "Searching.";
+}, 900);
