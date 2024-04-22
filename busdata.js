@@ -106,9 +106,7 @@ if (from && to && selectedDate && selectedDate) {
   window.location.href = `index.html`;
 }
 
-let h3 = document.querySelector(".h3");
-
-setInterval(() => {
+const searching = () => {
   h3.innerHTML = "Searching.";
   setTimeout(() => {
     h3.innerHTML = "Searching..";
@@ -137,4 +135,10 @@ setInterval(() => {
   setTimeout(() => {
     h3.innerHTML = "Searching.";
   }, 900);
+};
+
+let h3 = document.querySelector(".h3");
+searching();
+setInterval(() => {
+  searching();
 }, 1000);
