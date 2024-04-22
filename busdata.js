@@ -108,31 +108,33 @@ if (from && to && selectedDate && selectedDate) {
 
 let h3 = document.querySelector(".h3");
 
-h3.innerHTML = "Searching.";
-setTimeout(() => {
-  h3.innerHTML = "Searching..";
-}, 100);
-setTimeout(() => {
-  h3.innerHTML = "Searching...";
-}, 200);
-setTimeout(() => {
-  h3.innerHTML = "Searching....";
-}, 300);
-setTimeout(() => {
-  h3.innerHTML = "Searching.....";
-}, 400);
-setTimeout(() => {
-  h3.innerHTML = "Searching.....";
-}, 500);
-setTimeout(() => {
-  h3.innerHTML = "Searching....";
-}, 600);
-setTimeout(() => {
-  h3.innerHTML = "Searching...";
-}, 700);
-setTimeout(() => {
-  h3.innerHTML = "Searching..";
-}, 800);
-setTimeout(() => {
+setInterval(() => {
   h3.innerHTML = "Searching.";
-}, 900);
+  setTimeout(() => {
+    h3.innerHTML = "Searching..";
+  }, 100);
+  setTimeout(() => {
+    h3.innerHTML = "Searching...";
+  }, 200);
+  setTimeout(() => {
+    h3.innerHTML = "Searching....";
+  }, 300);
+  setTimeout(() => {
+    h3.innerHTML = "Searching.....";
+  }, 400);
+  setTimeout(() => {
+    h3.innerHTML = "Searching.....";
+  }, 500);
+  setTimeout(() => {
+    h3.innerHTML = "Searching....";
+  }, 600);
+  setTimeout(() => {
+    h3.innerHTML = "Searching...";
+  }, 700);
+  setTimeout(() => {
+    h3.innerHTML = "Searching..";
+  }, 800);
+  setTimeout(() => {
+    h3.innerHTML = "Searching.";
+  }, 900);
+}, 1000);
