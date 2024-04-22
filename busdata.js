@@ -107,6 +107,7 @@ if (from && to && selectedDate && selectedDate) {
 }
 
 const searching = () => {
+  let h3 = document.querySelector(".h3");
   h3.innerHTML = "Searching.";
   setTimeout(() => {
     h3.innerHTML = "Searching..";
@@ -137,7 +138,6 @@ const searching = () => {
   }, 900);
 };
 
-let h3 = document.querySelector(".h3");
 searching();
 setInterval(() => {
   searching();
